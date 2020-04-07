@@ -1,0 +1,111 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.input-area {
+  font-size: 1rem;
+  height: 15em;
+  width: 70.5em;
+}
+
+.text-area {
+  height: 100%;
+  width: 100%;
+}
+
+.keyboard {
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  margin-top: 2em;
+  height: 23.6em;
+  width: 70.5em;
+  padding: 0.3em;
+  background-color: burlywood;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4em;
+  height: 4em;
+  margin: 0.3em;
+  border-radius: 0.2em;
+  background-color: bisque;
+  /* font-size: 1.6rem; */
+}
+
+.key_usual {
+  width: 4em;
+}
+
+.key_backspace {
+  width: 10.1em;
+}
+
+.key_tab {
+  width: 5em;
+}
+
+.key_delete {
+  width: 4.5em;
+}
+
+.key_capsLock {
+  width: 6.8em;
+}
+
+.key_enter {
+  width: 11.9em;
+}
+
+.key_shiftLeft {
+  width: 8.6em;
+}
+
+.key_shiftRight {
+  width: 10.1em;
+}
+
+.key_controlLeft {
+  width: 6.5em;
+}
+
+.key_metaLeft {
+  width: 4.7em;
+}
+
+.key_altLeft {
+  width: 4.7em;
+}
+
+.key_space {
+  width: 27em;
+}
+
+.key_altRight {
+  width: 4.7em;
+}
+
+.key_controlRight {
+  width: 5.5em;
+}
+
+.lettering {
+  font-size: 1.4em;
+}
+
+.key:hover {
+  outline: 0.2em solid #fffaf8;
+}
+
+.key_active {
+  background-color: #fffaf8;
+}
