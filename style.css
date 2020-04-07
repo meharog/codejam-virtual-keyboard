@@ -104,8 +104,14 @@ body {
 
 .key:hover {
   outline: 0.2em solid #fffaf8;
+  cursor: default;
 }
 
 .key_active {
   background-color: #fffaf8;
+}
+
+.description {
+  margin-top: 1em;
+  font-size: 1.4em;
 }
