@@ -104,7 +104,7 @@ keyListKeys.forEach((element) => {
   vrtKeySet.push(key);
 
   const { lang } = localStorage;
-  const [letter] = KEY_LIST[element][lang];
+  const letter = KEY_LIST[element][lang][0];
   key.lettering.innerHTML = letter;
 });
 
