@@ -143,7 +143,7 @@ const changeLayout = (event) => {
 
 document.addEventListener('keydown', changeLayout);
 
-function changeCapsLock(event) {
+const changeCapsLock = (event) => {
   if (event.code === 'CapsLock') {
     const { lang } = localStorage;
     if (CapsLock === false) {
@@ -163,29 +163,29 @@ function changeCapsLock(event) {
       }
     });
   }
-}
+};
 
 document.addEventListener('keydown', changeCapsLock);
 
-function pressKey(event) {
+const pressKey = (event) => {
   const keyOne = document.getElementById(event.code);
   keyOne.classList.add('key_active');
   function upKey() {
     keyOne.classList.remove('key_active');
   }
   document.addEventListener('keyup', upKey);
-}
+};
 
 document.addEventListener('keydown', pressKey);
 
-function pressVirtualKey(event) {
+const pressVirtualKey = (event) => {
   const keyOne = event.currentTarget;
   keyOne.classList.add('key_active');
   function upVirtualKey() {
     keyOne.classList.remove('key_active');
   }
   document.addEventListener('mouseup', upVirtualKey);
-}
+};
 
 vrtKeySet.forEach((element) => {
   element.addEventListener('mousedown', pressVirtualKey);
