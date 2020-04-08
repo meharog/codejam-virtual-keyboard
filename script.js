@@ -105,6 +105,7 @@ keyListKeys.forEach((element) => {
 
   const { lang } = localStorage;
   const letter = KEY_LIST[element][lang][0];
+  // console.log(letter);
   key.lettering.innerHTML = letter;
 });
 
@@ -116,7 +117,7 @@ description.classList.add('description');
 
 document.querySelector('body').appendChild(description);
 
-function changeLayout(event) {
+const changeLayout = (event) => {
   if (event.ctrlKey && event.altKey) {
     let { lang } = localStorage;
     if (lang === 'en') {
@@ -138,7 +139,7 @@ function changeLayout(event) {
       }
     });
   }
-}
+};
 
 document.addEventListener('keydown', changeLayout);
 
